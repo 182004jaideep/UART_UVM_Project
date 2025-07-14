@@ -27,9 +27,7 @@ UART_UVM_Project/
 └── README.md
 
 
-<img width="1536" height="1024" alt="ChatGPT Image Jul 14, 2025, 02_21_06 PM" src="https://github.com/user-attachments/assets/c932d788-01b5-4be1-baec-b48e5a171a91" />
 
-![UART Block Diagram]
 
 
 ![WhatsApp Image 2025-07-14 at 14 26 55_f7f8aa76](https://github.com/user-attachments/assets/b789209d-8b23-4043-8813-f2c4977c2d6b)
