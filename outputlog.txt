@@ -1,0 +1,300 @@
+Command: launch_simulation
+INFO: [Vivado 12-12493] Simulation top is 'tb_uart_top'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/patel/OneDrive/Desktop/uart/uart_uvm_tb/uart_uvm_tb.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_uart_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/patel/OneDrive/Desktop/uart/uart_uvm_tb/uart_uvm_tb.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -L uvm  +incdir+C:/Users/patel/OneDrive/Desktop/uart/uvm-1.2/src  +incdir+C:/Users/patel/OneDrive/Desktop/uart/uvm-1.2/src/base  +incdir+C:/Users/patel/OneDrive/Desktop/uart/uvm-1.2/src/macros  +incdir+C:/Users/patel/OneDrive/Desktop/uart/uvm-1.2/src/dpi  +incdir+C:/Users/patel/OneDrive/Desktop/uart/uvm-1.2/src/tlm1  +incdir+C:/Users/patel/OneDrive/Desktop/uart/uvm-1.2/src/comps  +incdir+C:/Users/patel/OneDrive/Desktop/uart/uvm-1.2/src/seq  +incdir+C:/Users/patel/OneDrive/Desktop/uart/uvm-1.2/src/methodology  +define+UVM_NO_DPI -prj tb_uart_top_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/patel/OneDrive/Desktop/uart/rtl/bund_gen.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module baud_gen
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/patel/OneDrive/Desktop/uart/rtl/uart_fifo.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_fifo
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/patel/OneDrive/Desktop/uart/interface/uart_if.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/patel/OneDrive/Desktop/uart/rtl/uart_rx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/patel/OneDrive/Desktop/uart/rtl/uart_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/patel/OneDrive/Desktop/uart/rtl/uart_tx.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/patel/OneDrive/Desktop/uart/tb/tb_uart_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_uart_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/patel/OneDrive/Desktop/uart/uart_uvm_tb/uart_uvm_tb.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/patel/OneDrive/Desktop/uart/uart_uvm_tb/uart_uvm_tb.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_uart_top_behav xil_defaultlib.tb_uart_top xil_defaultlib.glbl -log elaborate.log -L uvm -timescale 1ns/1ps"
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_uart_top_behav xil_defaultlib.tb_uart_top xil_defaultlib.glbl -log elaborate.log -L uvm -timescale 1ns/1ps
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4468] File : /proj/xbuilds/SWIP/9999.0_0921_2117/installs/lin64/Vivado/2023.1/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv, Line : 25994, RANDC variable size more than 8 bits. This will be treated as a RAND variable instead.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_bund_gen_sv_1527403228
+Compiling package uvm.uvm_pkg
+Compiling package std.std
+Compiling module xil_defaultlib.uart_if
+Compiling module xil_defaultlib.baud_gen_default
+Compiling module xil_defaultlib.uart_fifo
+Compiling module xil_defaultlib.uart_tx(PARITY_EN=1'b0,PARITY_OD...
+Compiling module xil_defaultlib.uart_rx
+Compiling module xil_defaultlib.uart_top
+Compiling module xil_defaultlib.tb_uart_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_uart_top_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:42 . Memory (MB): peak = 419.578 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '42' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/patel/OneDrive/Desktop/uart/uart_uvm_tb/uart_uvm_tb.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_uart_top_behav -key {Behavioral:sim_1:Functional:tb_uart_top} -tclbatch {tb_uart_top.tcl} -log {simulate.log} +UVM_TESTNAME=uart_all_tests +UVM_VERBOSITY=UVM_LOW"
+INFO: [USF-XSim-8] Loading simulator feature
+ERROR: [Common 17-165] Too many positional options when parsing '+UVM_VERBOSITY=UVM_LOW', please type 'xsim -help' for usage info.
+
+ERROR: [USF-XSim-62] 'simulate' step failed with errors. Please check the Tcl console or log files for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:45 . Memory (MB): peak = 419.578 ; gain = 24.680
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+
+VSIMSA: Configuration file changed: `/home/runner/library.cfg'
+ALIB: Library "work" attached.
+work = /home/runner/work/work.lib
+MESSAGE_SP VCP2124 "Package uvm_pkg found in library uvm_1_2."
+MESSAGE "Unit top modules: tb_uart_top."
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time: 7[s]."
+done
+# Aldec, Inc. Riviera-PRO version 2023.04.112.8911 built for Linux64 on May 12, 2023.
+# HDL, SystemC, and Assertions simulator, debugger, and design environment.
+# (c) 1999-2023 Aldec, Inc. All rights reserved.
+# ELBREAD: Elaboration process.
+# ELBREAD: Warning: ELBREAD_0049 Package 'uvm_pkg' does not have a `timescale directive, but previous modules do.
+# ELBREAD: Elaboration time 0.7 [s].
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# KERNEL: PLI/VHPI kernel's engine initialization done.
+# PLI: Loading library '/usr/share/Riviera-PRO/bin/libsystf.so'
+# ELAB2: Create instances ...
+# KERNEL: Info: Loading library:  /usr/share/Riviera-PRO/bin/uvm_1_2_dpi
+# KERNEL: Time resolution set to 1ns.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... done : 0.1 [s]
+# SLP: Generation phase ...
+# SLP: Generation phase ... done : 0.1 [s]
+# SLP: Finished : 0.2 [s]
+# SLP: 0 primitives and 19 (70.37%) other processes in SLP
+# SLP: 114 (0.36%) signals in SLP and 100 (0.32%) interface signals
+# ELAB2: Elaboration final pass complete - time: 3.5 [s].
+# KERNEL: SLP loading done - time: 0.0 [s].
+# KERNEL: Warning: You are using the Riviera-PRO EDU Edition. The performance of simulation is reduced.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: SLP simulation initialization done - time: 0.0 [s].
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 30573 kB (elbread=2143 elab2=23283 kernel=5146 sdf=0)
+# KERNEL: UVM_INFO /home/build/vlib1/vlib/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: UVM-1.2
+# KERNEL: (C) 2007-2014 Mentor Graphics Corporation
+# KERNEL: (C) 2007-2014 Cadence Design Systems, Inc.
+# KERNEL: (C) 2006-2014 Synopsys, Inc.
+# KERNEL: (C) 2011-2013 Cypress Semiconductor Corp.
+# KERNEL: (C) 2013-2014 NVIDIA Corporation
+# KERNEL: ----------------------------------------------------------------
+# KERNEL: 
+# KERNEL:   ***********       IMPORTANT RELEASE NOTES         ************
+# KERNEL: 
+# KERNEL:   You are using a version of the UVM library that has been compiled
+# KERNEL:   with `UVM_NO_DEPRECATED undefined.
+# KERNEL:   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# KERNEL: 
+# KERNEL:   You are using a version of the UVM library that has been compiled
+# KERNEL:   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+# KERNEL:   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# KERNEL: 
+# KERNEL:       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# KERNEL: 
+# KERNEL: ASDB file was created in location /home/runner/dataset.asdb
+# KERNEL: UVM_INFO @ 0: reporter [RNTST] Running test uart_basic_test...
+# KERNEL: UVM_INFO /home/build/vlib1/vlib/uvm-1.2/src/base/uvm_root.svh(583) @ 0: reporter [UVMTOP] UVM testbench topology:
+# KERNEL: ------------------------------------------------------------------
+# KERNEL: Name                       Type                        Size  Value
+# KERNEL: ------------------------------------------------------------------
+# KERNEL: uvm_test_top               uart_basic_test             -     @340 
+# KERNEL:   env                      uart_env                    -     @353 
+# KERNEL:     agent                  uart_agent                  -     @362 
+# KERNEL:       driver               uart_driver                 -     @390 
+# KERNEL:         rsp_port           uvm_analysis_port           -     @409 
+# KERNEL:         seq_item_port      uvm_seq_item_pull_port      -     @399 
+# KERNEL:       monitor              uart_monitor                -     @419 
+# KERNEL:         ap                 uvm_analysis_port           -     @567 
+# KERNEL:         coverage_ap        uvm_analysis_port           -     @577 
+# KERNEL:       sequencer            uvm_sequencer               -     @428 
+# KERNEL:         rsp_export         uvm_analysis_export         -     @437 
+# KERNEL:         seq_item_export    uvm_seq_item_pull_imp       -     @555 
+# KERNEL:         arbitration_queue  array                       0     -    
+# KERNEL:         lock_queue         array                       0     -    
+# KERNEL:         num_last_reqs      integral                    32    'd1  
+# KERNEL:         num_last_rsps      integral                    32    'd1  
+# KERNEL:     coverage               uart_coverage               -     @380 
+# KERNEL:       cov_export           uvm_analysis_export         -     @592 
+# KERNEL:       cov_fifo             uvm_tlm_analysis_fifo #(T)  -     @602 
+# KERNEL:         analysis_export    uvm_analysis_imp            -     @651 
+# KERNEL:         get_ap             uvm_analysis_port           -     @641 
+# KERNEL:         get_peek_export    uvm_get_peek_imp            -     @621 
+# KERNEL:         put_ap             uvm_analysis_port           -     @631 
+# KERNEL:         put_export         uvm_put_imp                 -     @611 
+# KERNEL:     scoreboard             uart_scoreboard             -     @371 
+# KERNEL:       sb_export            uvm_analysis_export         -     @661 
+# KERNEL:       sb_fifo              uvm_tlm_analysis_fifo #(T)  -     @671 
+# KERNEL:         analysis_export    uvm_analysis_imp            -     @720 
+# KERNEL:         get_ap             uvm_analysis_port           -     @710 
+# KERNEL:         get_peek_export    uvm_get_peek_imp            -     @690 
+# KERNEL:         put_ap             uvm_analysis_port           -     @700 
+# KERNEL:         put_export         uvm_put_imp                 -     @680 
+# KERNEL: ------------------------------------------------------------------
+# KERNEL: 
+# KERNEL: UVM_INFO /home/runner/testbench.sv(608) @ 0: uvm_test_top [TEST] Ã°Å¸Å¡â‚¬ Starting Basic Random Test
+# KERNEL: UVM_INFO /home/runner/testbench.sv(100) @ 0: uvm_test_top.env.agent.sequencer@@seq [SEQ] Starting Random Sequence
+# KERNEL: Error: KERNEL_0085 "clk" does not have read access. Use switch +access +r for this region.
+# PLI:  (acc_vcl_add): Cannot set the value change callback on clk.
+# PLI: $dumpvars(testbench.sv:790): Object tb_uart_top.clk is not registered [systf:VCD13]
+# PLI:  (acc_vcl_delete): Invalid parameter specified.
+# KERNEL: Error: KERNEL_0085 "rst_n" does not have read access. Use switch +access +r for this region.
+# PLI:  (acc_vcl_add): Cannot set the value change callback on rst_n.
+# PLI: $dumpvars(testbench.sv:790): Object tb_uart_top.rst_n is not registered [systf:VCD13]
+# PLI:  (acc_vcl_delete): Invalid parameter specified.
+# KERNEL: Error: KERNEL_0085 "tx" does not have read access. Use switch +access +r for this region.
+# PLI:  (acc_vcl_add): Cannot set the value change callback on tx.
+# PLI: $dumpvars(testbench.sv:790): Object tb_uart_top.uart_if_inst.tx is not registered [systf:VCD13]
+# PLI:  (acc_vcl_delete): Invalid parameter specified.
+# KERNEL: Error: KERNEL_0085 "rx" does not have read access. Use switch +access +r for this region.
+# PLI:  (acc_vcl_add): Cannot set the value change callback on rx.
+# PLI: $dumpvars(testbench.sv:790): Object tb_uart_top.uart_if_inst.rx is not registered [systf:VCD13]
+# PLI:  (acc_vcl_delete): Invalid parameter specified.
+# KERNEL: Error: KERNEL_0085 "tx_data" does not have read access. Use switch +access +r for this region.
+# PLI:  (acc_vcl_add): Cannot set the value change callback on tx_data.
+# PLI: $dumpvars(testbench.sv:790): Object tb_uart_top.uart_if_inst.tx_data is not registered [systf:VCD13]
+# PLI:  (acc_vcl_delete): Invalid parameter specified.
+# KERNEL: Error: KERNEL_0085 "tx_wr_en" does not have read access. Use switch +access +r for this region.
+# PLI:  (acc_vcl_add): Cannot set the value change callback on tx_wr_en.
+# PLI: $dumpvars(testbench.sv:790): Object tb_uart_top.uart_if_inst.tx_wr_en is not registered [systf:VCD13]
+# PLI:  (acc_vcl_delete): Invalid parameter specified.
+# KERNEL: Error: KERNEL_0085 "tx_full" does not have read access. Use switch +access +r for this region.
+# PLI:  (acc_vcl_add): Cannot set the value change callback on tx_full.
+# PLI: $dumpvars(testbench.sv:790): Object tb_uart_top.uart_if_inst.tx_full is not registered [systf:VCD13]
+# PLI:  (acc_vcl_delete): Invalid parameter specified.
+# KERNEL: Error: KERNEL_0085 "tx_empty" does not have read access. Use switch +access +r for this region.
+# PLI:  (acc_vcl_add): Cannot set the value change callback on tx_empty.
+# PLI: $dumpvars(testbench.sv:790): Object tb_uart_top.uart_if_inst.tx_empty is not registered [systf:VCD13]
+# PLI:  (acc_vcl_delete): Invalid parameter specified.
+# KERNEL: Error: KERNEL_0085 "rx_data" does not have read access. Use switch +access +r for this region.
+# PLI:  (acc_vcl_add): Cannot set the value change callback on rx_data.
+# PLI: $dumpvars(testbench.sv:790): Object tb_uart_top.uart_if_inst.rx_data is not registered [systf:VCD13]
+# PLI:  (acc_vcl_delete): Invalid parameter specified.
+# KERNEL: Error: KERNEL_0085 "rx_rd_en" does not have read access. Use switch +access +r for this region.
+# PLI:  (acc_vcl_add): Cannot set the value change callback on rx_rd_en.
+# PLI: $dumpvars(testbench.sv:790): Object tb_uart_top.uart_if_inst.rx_rd_en is not registered [systf:VCD13]
+# PLI:  (acc_vcl_delete): Invalid parameter specified.
+# KERNEL: Error: KERNEL_0085 "rx_full" does not have read access. Use switch +access +r for this region.
+# PLI:  (acc_vcl_add): Cannot set the value change callback on rx_full.
+# PLI: $dumpvars(testbench.sv:790): Object tb_uart_top.uart_if_inst.rx_full is not registered [systf:VCD13]
+# PLI:  (acc_vcl_delete): Invalid parameter specified.
+# KERNEL: Error: KERNEL_0085 "rx_empty" does not have read access. Use switch +access +r for this region.
+# PLI:  (acc_vcl_add): Cannot set the value change callback on rx_empty.
+# PLI: $dumpvars(testbench.sv:790): Object tb_uart_top.uart_if_inst.rx_empty is not registered [systf:VCD13]
+# PLI:  (acc_vcl_delete): Invalid parameter specified.
+# KERNEL: Error: KERNEL_0085 "tx_busy" does not have read access. Use switch +access +r for this region.
+# PLI:  (acc_vcl_add): Cannot set the value change callback on tx_busy.
+# PLI: $dumpvars(testbench.sv:790): Object tb_uart_top.uart_if_inst.tx_busy is not registered [systf:VCD13]
+# PLI:  (acc_vcl_delete): Invalid parameter specified.
+# KERNEL: Error: KERNEL_0085 "rx_busy" does not have read access. Use switch +access +r for this region.
+# PLI:  (acc_vcl_add): Cannot set the value change callback on rx_busy.
+# PLI: $dumpvars(testbench.sv:790): Object tb_uart_top.uart_if_inst.rx_busy is not registered [systf:VCD13]
+# PLI:  (acc_vcl_delete): Invalid parameter specified.
+# KERNEL: Error: KERNEL_0085 "tx_error" does not have read access. Use switch +access +r for this region.
+# PLI:  (acc_vcl_add): Cannot set the value change callback on tx_error.
+# PLI: $dumpvars(testbench.sv:790): Object tb_uart_top.uart_if_inst.tx_error is not registered [systf:VCD13]
+# PLI:  (acc_vcl_delete): Invalid parameter specified.
+# KERNEL: Error: KERNEL_0085 "rx_error" does not have read access. Use switch +access +r for this region.
+# PLI:  (acc_vcl_add): Cannot set the value change callback on rx_error.
+# PLI: $dumpvars(testbench.sv:790): Object tb_uart_top.uart_if_inst.rx_error is not registered [systf:VCD13]
+# PLI:  (acc_vcl_delete): Invalid parameter specified.
+# KERNEL: Error: KERNEL_0085 "frame_error" does not have read access. Use switch +access +r for this region.
+# PLI:  (acc_vcl_add): Cannot set the value change callback on frame_error.
+# PLI: $dumpvars(testbench.sv:790): Object tb_uart_top.uart_if_inst.frame_error is not registered [systf:VCD13]
+# PLI:  (acc_vcl_delete): Invalid parameter specified.
+# KERNEL: Error: KERNEL_0085 "parity_error" does not have read access. Use switch +access +r for this region.
+# PLI:  (acc_vcl_add): Cannot set the value change callback on parity_error.
+# PLI: $dumpvars(testbench.sv:790): Object tb_uart_top.uart_if_inst.parity_error is not registered [systf:VCD13]
+# PLI:  (acc_vcl_delete): Invalid parameter specified.
+# KERNEL: Error: KERNEL_0085 "tx_underrun" does not have read access. Use switch +access +r for this region.
+# PLI:  (acc_vcl_add): Cannot set the value change callback on tx_underrun.
+# PLI: $dumpvars(testbench.sv:790): Object tb_uart_top.uart_if_inst.tx_underrun is not registered [systf:VCD13]
+# PLI:  (acc_vcl_delete): Invalid parameter specified.
+# KERNEL: Error: KERNEL_0085 "rx_overrun" does not have read access. Use switch +access +r for this region.
+# PLI:  (acc_vcl_add): Cannot set the value change callback on rx_overrun.
+# PLI: $dumpvars(testbench.sv:790): Object tb_uart_top.uart_if_inst.rx_overrun is not registered [systf:VCD13]
+# PLI:  (acc_vcl_delete): Invalid parameter specified.
+# KERNEL: Error: KERNEL_0085 "abort_tx" does not have read access. Use switch +access +r for this region.
+# PLI:  (acc_vcl_add): Cannot set the value change callback on abort_tx.
+# PLI: $dumpvars(testbench.sv:790): Object tb_uart_top.uart_if_inst.abort_tx is not registered [systf:VCD13]
+# PLI:  (acc_vcl_delete): Invalid parameter specified.
+# KERNEL: Error: KERNEL_0085 "rx_abort" does not have read access. Use switch +access +r for this region.
+# PLI:  (acc_vcl_add): Cannot set the value change callback on rx_abort.
+# PLI: $dumpvars(testbench.sv:790): Object tb_uart_top.uart_if_inst.rx_abort is not registered [systf:VCD13]
+# PLI:  (acc_vcl_delete): Invalid parameter specified.
+# KERNEL: UVM_INFO /home/runner/testbench.sv(219) @ 8810: uvm_test_top.env.agent.driver [DRV] Driven: TX: 0x6b, RX: 0x0, test=0, parity_err=0
+# KERNEL: UVM_INFO /home/runner/testbench.sv(219) @ 17490: uvm_test_top.env.agent.driver [DRV] Driven: TX: 0xa1, RX: 0x0, test=0, parity_err=0
+# KERNEL: UVM_INFO /home/runner/testbench.sv(219) @ 26170: uvm_test_top.env.agent.driver [DRV] Driven: TX: 0xe, RX: 0x0, test=0, parity_err=0
+# KERNEL: UVM_INFO /home/runner/testbench.sv(219) @ 34850: uvm_test_top.env.agent.driver [DRV] Driven: TX: 0xb2, RX: 0x0, test=0, parity_err=0
+# KERNEL: UVM_INFO /home/runner/testbench.sv(219) @ 43530: uvm_test_top.env.agent.driver [DRV] Driven: TX: 0x8c, RX: 0x0, test=0, parity_err=0
+# KERNEL: UVM_INFO /home/runner/testbench.sv(105) @ 43630: uvm_test_top.env.agent.sequencer@@seq [SEQ] Random Sequence Completed
+# KERNEL: UVM_INFO /home/runner/testbench.sv(613) @ 53630: uvm_test_top [TEST] Ã¢Å“â€¦ Basic Random Test Completed
+# KERNEL: UVM_INFO /home/build/vlib1/vlib/uvm-1.2/src/base/uvm_objection.svh(1271) @ 53630: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# KERNEL: UVM_INFO /home/runner/testbench.sv(422) @ 53630: uvm_test_top.env.coverage [COV] Coverage: 27.97%
+# KERNEL: UVM_INFO /home/runner/testbench.sv(506) @ 53630: uvm_test_top.env.scoreboard [SB] =========== FINAL SCOREBOARD REPORT ===========
+# KERNEL: UVM_INFO /home/runner/testbench.sv(507) @ 53630: uvm_test_top.env.scoreboard [SB] Total: 2676 | Normal: 2676 | Parity: 0 | Corner: 0 | Error: 0
+# KERNEL: UVM_INFO /home/runner/testbench.sv(508) @ 53630: uvm_test_top.env.scoreboard [SB] TX/RX mismatches: 0
+# KERNEL: UVM_INFO /home/runner/testbench.sv(509) @ 53630: uvm_test_top.env.scoreboard [SB] Parity errors:     0
+# KERNEL: UVM_INFO /home/runner/testbench.sv(510) @ 53630: uvm_test_top.env.scoreboard [SB] Frame errors:      0
+# KERNEL: UVM_INFO /home/runner/testbench.sv(511) @ 53630: uvm_test_top.env.scoreboard [SB] Total errors:      5
+# KERNEL: UVM_INFO /home/runner/testbench.sv(512) @ 53630: uvm_test_top.env.scoreboard [SB] ===============================================
+# KERNEL: UVM_INFO /home/build/vlib1/vlib/uvm-1.2/src/base/uvm_report_server.svh(869) @ 53630: reporter [UVM/REPORT/SERVER] 
+# KERNEL: --- UVM Report Summary ---
+# KERNEL: 
+# KERNEL: ** Report counts by severity
+# KERNEL: UVM_INFO :   21
+# KERNEL: UVM_WARNING :    0
+# KERNEL: UVM_ERROR :    0
+# KERNEL: UVM_FATAL :    0
+# KERNEL: ** Report counts by id
+# KERNEL: [COV]     1
+# KERNEL: [DRV]     5
+# KERNEL: [RNTST]     1
+# KERNEL: [SB]     7
+# KERNEL: [SEQ]     2
+# KERNEL: [TEST]     2
+# KERNEL: [TEST_DONE]     1
+# KERNEL: [UVM/RELNOTES]     1
+# KERNEL: [UVMTOP]     1
+# KERNEL: 
+# RUNTIME: Info: RUNTIME_0068 uvm_root.svh (521): $finish called.
+# KERNEL: Time: 53630 ns,  Iteration: 57,  Instance: /tb_uart_top,  Process: @INITIAL#784_3@.
+# KERNEL: stopped at time: 53630 ns
+# VSIM: Simulation has finished. There are no more test vectors to simulate.
+# ACDB: Covergroup Coverage data has been saved to "fcover.acdb" database.
+# VSIM: Simulation has finished.
